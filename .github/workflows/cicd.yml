@@ -57,4 +57,6 @@ jobs:
     - name: Generate and submit dependency graph
       uses: gradle/actions/dependency-submission@v4
       with:
-        gradle-wrapper-directory: RegistryService/service-registry  
+        gradle-version: 8.14.3
+        working-directory: RegistryService/service-registry
+
