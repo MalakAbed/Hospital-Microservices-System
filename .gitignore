@@ -1,0 +1,73 @@
+##############################
+# Java & Spring Boot
+##############################
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+
+# Maven & Gradle
+target/
+build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Spring Boot specific
+*.iml
+*.ipr
+*.iws
+
+##############################
+# NetBeans
+##############################
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+nbactions.xml
+nb-configuration.xml
+
+##############################
+# macOS System Files
+##############################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+##############################
+# Docker
+##############################
+*.pid
+docker-compose.override.yml
+mysql-data/
+postgres-data/
+tmp/
+logs/
+
+##############################
+# IntelliJ / VSCode (if used)
+##############################
+.idea/
+.vscode/
+
+##############################
+# Environment & Credentials
+##############################
+*.env
+*.properties.local
+*.yml.local
+*.bak
+*.swp
+
+##############################
+# OS-generated junk
+##############################
+Thumbs.db
+ehthumbs.db
+Desktop.ini

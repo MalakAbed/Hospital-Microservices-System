@@ -1,0 +1,22 @@
+server:
+  port: 9004
+
+spring:
+  application:
+    name: DRUG-INTERACTION-CHECKER-SERVICE
+  kafka:
+    bootstrap-servers: localhost:9092 # Assuming Kafka is running locally
+    consumer:
+      group-id: drug-interaction-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
